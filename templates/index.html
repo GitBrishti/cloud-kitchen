@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandana's Kitchen</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Bandana's Kitchen</h1>
+        <p>Authentic Homemade Flavours, Made with Love</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/menu">Menu</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <img src="{{ url_for('static', filename='images/hero.jpg') }}"
+             alt="Featured Dish">
+
+        <h2>Welcome to Bandana's Kitchen</h2>
+
+        <p>
+            Freshly prepared homemade delicacies, cakes, snacks, and traditional
+            recipes crafted with care and the finest ingredients.
+        </p>
+
+        <a href="/menu" class="btn">Explore Our Menu</a>
+        <section class="trust-badge">
+        <p>✅ FSSAI Registered | 🍲 Homemade | 🌿 Fresh Ingredients</p>
+    </section>
+
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="about-section">
+
+        <h2>Why Choose Us?</h2>
+
+        <p>
+            ✓ Homemade with love<br>
+            ✓ Fresh ingredients every day<br>
+            ✓ Authentic Bengali and Indian flavours<br>
+            ✓ Hygienic preparation<br>
+            ✓ Custom orders for special occasions
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Bandana's Kitchen | Homemade Food Cooked with Love</p>
+        <p>FSSAI License No: 22826034000069</p>
+    </footer>
+
+</body>
+</html>
