@@ -1,12 +1,11 @@
-<nav>
-    <a href="/">🏠 Home</a>
-    <a href="/menu">🍽️ Menu</a>
-    <a href="/about">👩‍🍳 About</a>
-    <a href="/contact">📞 Contact</a>
+<nav class="main-navbar">
+    <a href="/" class="nav-item"><span>🏠</span> Home</a>
+    <a href="/menu" class="nav-item"><span>🍽️</span> Menu</a>
+    <a href="/about" class="nav-item"><span>👩‍🍳</span> About</a>
+    <a href="/contact" class="nav-item"><span>📞</span> Contact</a>
 </nav>
 
 <section class="about-section">
-
     <img src="{{ url_for('static', filename='images/mother.jpg') }}"
          alt="Bandana"
          class="about-image">
@@ -26,25 +25,22 @@
     </p>
 
     <div class="about-highlights">
-
         <div class="highlight-card">
-            🍲
+            <span class="card-icon">🍲</span>
             <h3>Homemade</h3>
             <p>Prepared fresh for every order.</p>
         </div>
 
         <div class="highlight-card">
-            🌿
+            <span class="card-icon">🌿</span>
             <h3>Fresh Ingredients</h3>
             <p>Quality ingredients with no compromise.</p>
         </div>
 
         <div class="highlight-card">
-            ❤️
+            <span class="card-icon">❤️</span>
             <h3>Made With Love</h3>
             <p>Every dish carries a personal touch.</p>
         </div>
-
     </div>
-
 </section>
