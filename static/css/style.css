@@ -113,22 +113,28 @@ body {
     box-sizing: border-box;
 }
 
-.hero h2 {
-    color: #d35400;
-    font-size: 1.8rem;     /* Refined down from a larger default for a clean aesthetic */
-    margin-bottom: 12px;
-    font-weight: 600;
-    letter-spacing: -0.3px;
+.hero-overlay h1 {
+    color: #ffffff;                    /* Pure white text */
+    font-family: 'Lobster', cursive;   /* Utilizing your newly added premium brand font */
+    font-size: 4rem;                   /* Significantly larger and commanding */
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow behind text for perfect legibility */
 }
 
-.hero p {
-    color: #666666;        /* Subtle, readable contrast text colour */
-    font-size: 0.95rem;    /* Softened size down to make it look highly professional */
-    max-width: 650px;      /* Prevents line breaks from stretching too wide on desktop */
-    margin-bottom: 20px;
-    line-height: 1.6;
+.hero-overlay p {
+    color: #ffffff;                    /* Crisp white text color */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;                 /* Increased size for great legibility */
+    font-weight: 300;
+    max-width: 650px;                  /* Prevents line breaks from stretching too wide on desktop */
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-.hero .btn {
+.hero-overlay .btn {
     margin: 5px auto 0 auto;
 }
 /* =========================
@@ -414,13 +420,13 @@ font-size: 14px;
     }
 
     .hero-overlay h1 {
-        font-size: 2.5rem; /* Shrinks the text down elegantly so it never wraps or breaks */
+        font-size: 2.6rem; /* Shrinks the text down elegantly so it never wraps or breaks */
         margin-bottom: 8px;
     }
 
     .hero-overlay p {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
+        font-size: 1rem;              /* Balanced sizing for mobile phones */
+        padding: 0 10px;
     }
     .main-navbar {
         gap: 10px;
