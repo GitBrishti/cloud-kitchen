@@ -12,11 +12,6 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Bandana's Kitchen</h1>
-        <p>Authentic Homemade Flavours, Made with Love</p>
-    </header>
 
     <!-- Navigation -->
     <nav>
@@ -26,22 +21,38 @@
         <a href="/contact">Contact</a>
     </nav>
 
+    <!-- Header -->
+    <section class="hero-banner">
+    <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="Bandana's Kitchen">
+
+    <div class="hero-overlay">
+        <h1>Bandana's Kitchen</h1>
+        <p>Authentic Homemade Bengali Cuisine</p>
+
+        <a href="/menu" class="hero-btn">
+            View Menu
+        </a>
+    </div>
+    </section>
+
+    
+
     <!-- Hero Section -->
     <section class="hero">
 
-        <img src="{{ url_for('static', filename='images/hero.jpg') }}"
-             alt="Featured Dish">
+    <h2>Welcome to Bandana's Kitchen</h2>
 
-        <h2>Welcome to Bandana's Kitchen</h2>
+    <p>
+        Freshly prepared homemade delicacies, cakes, snacks, and traditional
+        recipes crafted with care and the finest ingredients.
+    </p>
 
-        <p>
-            Freshly prepared homemade delicacies, cakes, snacks, and traditional
-            recipes crafted with care and the finest ingredients.
-        </p>
+    <a href="/menu" class="btn">Explore Our Menu</a>
 
-        <a href="/menu" class="btn">Explore Our Menu</a>
-        <section class="trust-badge">
-        <p>✅ FSSAI Registered | 🍲 Homemade | 🌿 Fresh Ingredients</p>
+    </section>
+
+    <section class="trust-badge">
+    <p>✅ FSSAI Registered | 🍲 Homemade | 🌿 Fresh Ingredients</p>
     </section>
 
     </section>
@@ -51,14 +62,21 @@
 
         <h2>Why Choose Us?</h2>
 
-        <p>
-            ✓ Homemade with love<br>
-            ✓ Fresh ingredients every day<br>
-            ✓ Authentic Bengali and Indian flavours<br>
-            ✓ Hygienic preparation<br>
-            ✓ Custom orders for special occasions
-        </p>
+        <div class="features">
+        <div class="feature">🍲 Homemade Recipes</div>
+        <div class="feature">🌿 Fresh Ingredients</div>
+        <div class="feature">✨ Hygienic Preparation</div>
+        <div class="feature">🎂 Custom Orders</div>
+        </div>
+    </section>
 
+    <section class="testimonial">
+    <h2>Made with Love</h2>
+
+    <p>
+        Every dish at Bandana's Kitchen is prepared fresh,
+        using traditional recipes and carefully selected ingredients.
+    </p>
     </section>
 
     <!-- Footer -->
@@ -68,4 +86,5 @@
     </footer>
 
 </body>
+
 </html>
