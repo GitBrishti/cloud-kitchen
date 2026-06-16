@@ -68,18 +68,16 @@ nav a:hover {
 color: #d35400;
 }
 
-/* =========================
-HERO SECTION
-========================= */
-
-
+/* ==========================================================
+   HERO BANNER (Optimized for 100% Desktop Viewport Zoom)
+   ========================================================== */
 .hero-banner {
     position: relative;
     width: 100%;
-    height: 65vh; /* Takes up a beautiful portion of the desktop screen */
-    background-image: url('../images/hero.jpg'); /* Matches your exact lowercase/uppercase repository path */
-    background-size: cover;
-    background-position: center center;
+    height: 75vh; /* Takes up a beautiful, proportional chunk of desktop space */
+    background-image: url('../images/hero.jpg'); /* Direct reference to your standard image asset */
+    background-size: cover; /* Forces the photo to fill the boundaries completely */
+    background-position: center center; /* Keeps the middle food dishes perfectly framed */
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -93,7 +91,7 @@ HERO SECTION
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Smooth dimming overlay layer */
+    background: rgba(0, 0, 0, 0.45); /* Elegant darkening filter layer so your text pops */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +117,6 @@ HERO SECTION
     font-weight: 300;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-
 /* =========================
 TRUST BADGE
 ========================= */
@@ -337,12 +334,13 @@ font-size: 14px;
     }
 
     .hero-banner {
-        height: 50vh; /* Adjusts proportionally smaller for tall mobile viewports */
-        background-position: 40% center; /* Shifts the focus layer to keep main food dishes centered on thin screens */
+        height: 50vh; /* Adjusts beautifully for tall, narrow mobile smartphone viewports */
+        background-position: center center; /* Focuses directly on the rich center platters */
     }
 
     .hero-overlay h1 {
-        font-size: 2.8rem; /* Scales title down smoothly to prevent text wrapping layout breaks */
+        font-size: 2.5rem; /* Shrinks the text down elegantly so it never wraps or breaks */
+        margin-bottom: 8px;
     }
 
     .hero-overlay p {
