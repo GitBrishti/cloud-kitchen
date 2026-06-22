@@ -1,8 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bandana's Kitchen</title>
+    <link rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/favicon.png') }}?v=2">
+    
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
 <nav class="main-navbar">
-    <a href="/" class="nav-item"><span>🏠</span> Home</a>
-    <a href="/menu" class="nav-item"><span>🍽️</span> Menu</a>
-    <a href="/about" class="nav-item"><span>👩‍🍳</span> About</a>
-    <a href="/contact" class="nav-item"><span>📞</span> Contact</a>
+
+    <a href="/" class="nav-brand">
+        <img src="{{ url_for('static', filename='images/favicon.png') }}"
+             alt="Bandana's Kitchen Logo">
+        <span>Bandana's Kitchen</span>
+    </a>
+
+    <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/menu">Menu</a>
+        <a href="/about">Our Story</a>
+        <a href="/contact">Contact</a>
+    </div>
+
 </nav>
 
 <section class="about-section">
@@ -44,3 +72,6 @@
         </div>
     </div>
 </section>
+
+</body>
+</html>

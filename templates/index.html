@@ -16,11 +16,19 @@
 
 
     <!-- Navigation -->
-    <nav>
-        <a href="/">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+    <nav class="main-navbar">
+
+         <div class="nav-brand">
+            <img src="{{ url_for('static', filename='images/favicon.png') }}"
+                 alt="Bandana's Kitchen">
+         </div>
+         <div class="nav-links">
+
+            <a href="/">Home</a>
+            <a href="/menu">Menu</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
     </nav>
 
     <!-- Header -->
@@ -37,7 +45,7 @@
     <p>✅ FSSAI Registered | 🍲 Homemade | 🌿 Fresh Ingredients</p>
     </section>
 
-    </section>
+    
 
     <!-- Why Choose Us -->
     <section class="about-section">

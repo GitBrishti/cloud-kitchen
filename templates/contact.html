@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Bandana's Kitchen</title>
+    <link rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='images/favicon.png') }}?v=2">
+    
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
@@ -17,7 +21,13 @@
     <p>Authentic Homemade Flavours, Made with Love</p>
 </header>
 
-<nav>
+<nav class="main-navbar">
+
+     <a href="/" class="nav-brand">
+        <img src="{{ url_for('static', filename='images/favicon.png') }}"
+             alt="Bandana's Kitchen Logo">
+        <span>Bandana's Kitchen</span>
+    </a>
     <a href="/">🏠 Home</a>
     <a href="/menu">🍽️ Menu</a>
     <a href="/about">👩‍🍳 About</a>
