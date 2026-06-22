@@ -272,43 +272,52 @@ margin: 18px;
 /* ==========================================
    ABOUT SECTION (Eye-Soothing Typography)
    ========================================== */
+
 .about-section {
-    max-width: 900px; /* Snugger text boundary width */
-    margin: 50px auto;
+    max-width: 900px;         /* Cozy container layout limits for better reading line-lengths */
+    margin: 50px auto;        /* Perfectly centers the wrapper container on the page */
     padding: 0 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Keeps structural items stacked perfectly on the center axis */
+    box-sizing: border-box;
 }
 
 .about-section h2 {
-    color: #d35400;
-    font-size: 1.8rem; /* Softened text size scale */
-    margin-bottom: 18px;
+    color: #d35400;           /* Soft signature brand warm orange */
+    font-size: 1.8rem;        /* Refined premium scale size */
     font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: -0.3px;
 }
 
 .about-image {
-    width: 200px; /* Slightly refined frame sizing */
+    width: 200px;             /* Fixed explicit dimensions preventing aspect ratio stretching */
     height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff5eb; /* Softer backdrop frame ring */
-    outline: 1px solid #d35400;
+    object-fit: cover;        /* Beautiful internal image crop box fallback */
+    border-radius: 50%;       /* Elegant circular frame design */
+    border: 4px solid #fff5eb; /* Softer cream border ring accent */
+    outline: 1px solid #d35400; /* Fine accent pin-stripe mapping */
     margin-bottom: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); /* Highly diffused subtle shadow profile */
 }
 
 .about-text {
     max-width: 700px;
-    margin: 0 auto 15px auto;
-    color: #555555;
-    font-size: 0.95rem; /* Compact, clear, premium looking font size */
-    line-height: 1.6;
+    margin: 0 auto 15px auto;  /* Centers individual paragraph strings */
+    color: #555555;           /* Relaxed off-black slate tone to soothe eye-strain */
+    font-size: 0.95rem;       /* Clean, clear compact desktop readable font weight */
+    line-height: 1.6;         /* Breathable text vertical leading */
 }
 
+/* --- Features & Highlight Cards Grid --- */
 .about-highlights {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Fluidly wraps cards based on row space */
     gap: 20px;
+    width: 100%;
+    max-width: 800px;
     margin-top: 40px;
 }
 
@@ -316,8 +325,14 @@ margin: 18px;
     background: #ffffff;
     padding: 22px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04); /* Subtler, soft shadows */
     border: 1px solid #f6f3ee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* Incredibly soft modern branding depth shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-card:hover {
+    transform: translateY(-2px); /* Gentle hover lifting feedback animation */
+    box-shadow: 0 6px 16px rgba(211, 84, 0, 0.06);
 }
 
 .card-icon {
@@ -329,13 +344,14 @@ margin: 18px;
 .highlight-card h3 {
     color: #d35400;
     font-size: 1.15rem;
-    margin-bottom: 6px;
     font-weight: 600;
+    margin-bottom: 6px;
 }
 
 .highlight-card p {
     color: #666666;
-    font-size: 0.88rem;
+    font-size: 0.88rem;       /* Clean subtext size scale layout */
+    line-height: 1.4;
 }
 /* =========================
 CONTACT PAGE
@@ -439,19 +455,33 @@ font-size: 14px;
     }
 
     .about-section {
-        margin: 35px auto;
+        margin: 35px auto;    /* Tighter viewport spacing blocks */
+        padding: 0 15px;
     }
 
     .about-section h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem;    /* Scale down seamlessly on narrow smartphone devices */
     }
 
     .about-image {
-        width: 160px;
+        width: 160px;         /* Compact frame boundaries optimized for tiny mobile columns */
         height: 160px;
+        margin-bottom: 20px;
     }
 
     .about-text {
-        font-size: 0.9rem;
+        font-size: 0.9rem;    /* Highly clear mobile text alignment structure */
+        line-height: 1.5;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr; /* Stacks highlight grids clean straight down single column files */
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .highlight-card {
+        padding: 18px;        /* Optimized container inner layouts */
     }
 }
+
